@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.htmlunit</groupId>
             <artifactId>neko-htmlunit</artifactId>
-            <version>3.4.0</version>
+            <version>3.5.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents.client5</groupId>
@@ -322,8 +322,7 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <checkSignatureRule
-                                    implementation="org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule">
+                                <checkSignatureRule implementation="org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule">
                                     <signature>
                                         <groupId>org.codehaus.mojo.signature</groupId>
                                         <!-- Check against Java 7 API -->
@@ -365,7 +364,7 @@
                             <mainClass>org.owasp.validator.html.AntiSamy</mainClass>
                             <packageName>org.owasp.validator.html</packageName>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <classpathPrefix />
+                            <classpathPrefix/>
                         </manifest>
                     </archive>
                 </configuration>
@@ -516,8 +515,8 @@
                                 <exclude>target/**/*.*</exclude>
                             </excludes>
                             <!-- define the steps to apply to those files -->
-                            <trimTrailingWhitespace />
-                            <endWithNewline />
+                            <trimTrailingWhitespace/>
+                            <endWithNewline/>
                             <indent>
                                 <tabs>false</tabs>
                                 <spaces>true</spaces>
@@ -543,9 +542,9 @@
 
                     <!-- define a language-specific format -->
                     <java>
-                        <importOrder /> <!-- standard import order -->
-                        <removeUnusedImports /> <!-- self-explanatory -->
-                        <toggleOffOn /> <!-- enable spotless override tags -->
+                        <importOrder/> <!-- standard import order -->
+                        <removeUnusedImports/> <!-- self-explanatory -->
+                        <toggleOffOn/> <!-- enable spotless override tags -->
 
                         <!-- apply a specific flavor of google-java-format -->
                         <googleJavaFormat>
